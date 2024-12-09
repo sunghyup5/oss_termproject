@@ -31,6 +31,10 @@
 <body>
     <h1>Music Generator</h1>
     <form id="music-form">
+        <form id="music-form">
+        <h2>Generated Music List</h2>
+        <ul id="music-list"></ul>
+
         <label for="prompt">Enter a music prompt:</label><br>
         <input type="text" id="prompt" name="prompt" value="A calm acoustic guitar melody"><br><br>
 
@@ -94,6 +98,35 @@
         function clearPrompt() {
             promptInput.value = "";
         }
+// 음악 목록 업데이트 함수
+function updateMusicList(files) {
+    const musicList = document.getElementById("music-list");
+    musicList.innerHTML = ""; // 기존 목록 초기화
+
+    files.forEach((file) => {
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
+        link.textContent = file;
+        link.href = `/content/${file}`;
+        link.target = "_blank"; // 새 창에서 열기
+        link.onclick = (e) => {
+            e.preventDefault();
+            musicPlayer.src = link.href;
+            musicPlayer.style.display = "block";
+            musicPlayer.play();
+        };
+        listItem.appendChild(link);
+        musicList.appendChild(listItem);
+    });
+}
+
+// 음악 생성 요청 후 목록 업데이트
+if (response.ok) {
+    const result = await response.json();
+    updateMusicList(result.files);
+}
+
+        
     </script>
 </body>
 </html>
