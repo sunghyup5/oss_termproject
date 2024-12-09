@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .loading {
+            display: none;
+            font-size: 16px;
+            color: #555;
+        }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            border-top-color: #000;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Generator</h1>
+    <form id="music-form">
+        <label for="prompt">Enter a music prompt:</label><br>
+        <input type="text" id="prompt" name="prompt" value="A calm acoustic guitar melody"><br><br>
+
+        <label for="duration">Duration (seconds):</label><br>
+        <input type="number" id="duration" name="duration" min="5" max="30" value="10"><br><br>
+
+        <label>Choose Keywords:</label><br>
+        <button type="button" onclick="addKeyword('Acoustic')">Acoustic</button>
+        <button type="button" onclick="addKeyword('Guitar')">Guitar</button>
+        <button type="button" onclick="addKeyword('Jazz')">Jazz</button><br><br>
+
+        <button type="button" onclick="clearPrompt()">Clear Prompt</button><br><br>
+
+        <button type="submit">Generate Music</button>
+    </form>
+
+    <p class="loading">
+        <span class="spinner"></span> Generating music...
+    </p>
+
+    <audio id="music-player" controls style="display:none;"></audio>
+
+    <script>
+        const form = document.getElementById("music-form");
+        const promptInput = document.getElementById("prompt");
+        const loading = document.querySelector(".loading");
+        const musicPlayer = document.getElementById("music-player");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            loading.style.display = "block";
+            musicPlayer.style.display = "none";
+
+            const prompt = promptInput.value;
+            const duration = document.getElementById("duration").value;
+
+            const response = await fetch("/generate", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ prompt, duration }),
+            });
+
+            if (response.ok) {
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                musicPlayer.src = url;
+                musicPlayer.style.display = "block";
+            } else {
+                alert("Failed to generate music.");
+            }
+
+            loading.style.display = "none";
+        });
+
+        function addKeyword(keyword) {
+            promptInput.value += ` ${keyword}`;
+        }
+
+        function clearPrompt() {
+            promptInput.value = "";
+        }
+    </script>
+</body>
+</html>
