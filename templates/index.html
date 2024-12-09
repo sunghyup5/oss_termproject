@@ -32,7 +32,7 @@
     <h1>Music Generator</h1>
     <form id="music-form">
         <label for="prompt">Enter a music prompt:</label><br>
-        <input type="text" id="prompt" name="prompt" value="A calm acoustic guitar melody"><br><br>
+        <input type="text" id="prompt" name="prompt" value=""><br><br>
 
         <label for="duration">Duration (seconds):</label><br>
         <input type="number" id="duration" name="duration" min="5" max="30" value="10"><br><br>
@@ -40,7 +40,11 @@
         <label>Choose Keywords:</label><br>
         <button type="button" onclick="addKeyword('Acoustic')">Acoustic</button>
         <button type="button" onclick="addKeyword('Guitar')">Guitar</button>
-        <button type="button" onclick="addKeyword('Jazz')">Jazz</button><br><br>
+        <button type="button" onclick="addKeyword('Jazz')">Jazz</button>
+        <button type="button" onclick="addKeyword('Piano')">Piano</button>
+		<button type="button" onclick="addKeyword('Pop')">Pop</button>
+		<button type="button" onclick="addKeyword('Relaxing')">Relaxing</button><br><br>
+
 
         <button type="button" onclick="clearPrompt()">Clear Prompt</button><br><br>
 
