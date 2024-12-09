@@ -6,35 +6,34 @@
 </head>
 <body>
     <h1>Music Generator</h1>
+    <ul id="music-list"></ul>
+      <audio id="music-player" controls style="display: block;"></audio>
+    <p class="loading" style="display: block;">
+        <span class="spinner"></span> Generating music...
+    </p>ㄴ
     <form id="music-form">
-        <label for="prompt">Enter a music prompt:</label><br>
-        <input type="text" id="prompt" name="prompt" value=""><br><br>
+        <label for="prompt">Enter a music prompt:</label>
+        <input type="text" id="prompt" name="prompt" placeholder="e.g., Jazz Pop" value="">
 
-        <label for="duration">Duration (seconds):</label><br>
-        <input type="number" id="duration" name="duration" min="5" max="30" value="10"><br><br>
+        <label for="duration">Duration (seconds):</label>
+        <input type="number" id="duration" name="duration" min="5" max="30" value="10">
 
-        <label>Choose Keywords:</label><br>
-        <button type="button" onclick="addKeyword('Acoustic')">Acoustic</button>
-        <button type="button" onclick="addKeyword('Guitar')">Guitar</button>
-        <button type="button" onclick="addKeyword('Jazz')">Jazz</button>
-        <button type="button" onclick="addKeyword('Piano')">Piano</button>
-        <button type="button" onclick="addKeyword('Pop')">Pop</button>
-        <button type="button" onclick="addKeyword('Relaxing')">Relaxing</button><br><br>
+        <div style="margin-bottom: 15px;">
+            <label>Choose Keywords:</label><br>
+            <button type="button" onclick="addKeyword('Acoustic')">Acoustic</button>
+            <button type="button" onclick="addKeyword('Guitar')">Guitar</button>
+            <button type="button" onclick="addKeyword('Jazz')">Jazz</button>
+            <button type="button" onclick="addKeyword('Piano')">Piano</button>
+            <button type="button" onclick="addKeyword('Pop')">Pop</button>
+            <button type="button" onclick="addKeyword('Relaxing')">Relaxing</button>
+            <button type="button" onclick="addKeyword('Electronic')">Electronic</button>
+            <button type="button" onclick="addKeyword('Ambient')">Ambient</button>
+            <button type="button" onclick="addKeyword('Rock')">Rock</button>
+        </div>
 
-        <button type="button" onclick="clearPrompt()">Clear Prompt</button><br><br>
-
+        <button type="button" onclick="clearPrompt()">Clear Prompt</button>
         <button type="submit">Generate Music</button>
     </form>
-
-    <h2>Generated Music List</h2>
-    <ul id="music-list"></ul>
-
-    <p class="loading">
-        <span class="spinner"></span> Generating music...
-    </p>
-
-    <audio id="music-player" controls style="display:none;"></audio>
-
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
