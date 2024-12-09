@@ -1,23 +1,130 @@
 body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .loading {
-            display: none;
-            font-size: 16px;
-            color: #555;
-        }
-        .spinner {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid rgba(0, 0, 0, 0.3);
-            border-radius: 50%;
-            border-top-color: #000;
-            animation: spin 1s ease-in-out infinite;
-        }
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#music-list {
+    display: block;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px; /* 프롬프트와의 간격 */
+    width: 80%;
+    max-width: 600px;
+    min-height: 50px; /* 최소 높이 설정 */
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+#music-form {
+    background: #fff; /* 하얀 배경 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
+    padding: 20px; /* 내부 여백 */
+    width: 100%;
+    max-width: 400px; /* 최대 너비 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 요소 간 간격 */
+    margin-top: 5px; /* 뮤직 리스트와 간격 */
+}
+
+
+#music-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px; /* 음악 목록과의 간격 */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 폼 내부 요소 간격 */
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+audio {
+    display: block;
+    margin-bottom: 20px; /* 음악 목록과의 간격 */
+    width: 100%;
+    max-width: 400px;
+}
+
+.loading {
+    display: flex;
+    top: 70%; /* 화면의 세로 중앙 */
+    left: 50%; /* 화면의 가로 중앙 */
+    transform: translate(-50%, -50%); /* 정확한 중앙 맞춤 */
+    font-size: 16px;
+    color: #555;
+}
+
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
