@@ -107,7 +107,7 @@ audio {
     display: flex;
     top: 70%; /* 화면의 세로 중앙 */
     left: 50%; /* 화면의 가로 중앙 */
-    transform: translate(-50%, -50%); /* 정확한 중앙 맞춤 */
+    transform: translate(-5%, -30%); /* 정확한 중앙 맞춤 */
     font-size: 16px;
     color: #555;
 }
