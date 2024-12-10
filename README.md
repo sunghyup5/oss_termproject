@@ -101,6 +101,13 @@ Follow these steps to use the Music Generator Web App:
    - Once the music is generated, it will appear in the **"Generated Music List."**
    - Click on the file name in the list to play it using the audio player.
 
+     <img src="images/mg2.gif" alt="Resized Image" width="300">
+
+     <video width="600" controls>
+    <source src="images/sound.mp4" type="video/mp4">
+    </video>
+
+
 6. **Clear the prompt** (optional):
    - If you want to reset the prompt input, click the **"Clear Prompt"** button.
 
