@@ -105,9 +105,6 @@ Follow these steps to use the Music Generator Web App:
 
 
 
-    [Demo video](https://github.com/username/repository/raw/main/images/sound.mp4)
-
-
 
 6. **Clear the prompt** (optional):
    - If you want to reset the prompt input, click the **"Clear Prompt"** button.
