@@ -110,9 +110,14 @@ Follow these steps to use the Music Generator Web App:
 - **Keywords**: "Piano", "Relaxing."
 - **Generated Result**: A calming piano track ideal for a meditative session.
 
-## License
+## References and Licenses
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project uses the following open-source libraries:
+
+- [Audiocraft's MusicGen Model](https://github.com/facebookresearch/audiocraft): Licensed under the MIT License.
+- [Flask](https://flask.palletsprojects.com/): Licensed under the BSD-3-Clause License.
+- [ngrok](https://ngrok.com): Terms of service apply.
+
 
 
 
