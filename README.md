@@ -94,6 +94,8 @@ Follow these steps to use the Music Generator Web App:
 
 4. **Generate music**:
    - Click the **"Generate Music"** button to create your music. The system will process your input and generate a music file.
+  
+     <img src="images/mg1.gif" alt="Resized Image" width="300">
 
 5. **View and play generated music**:
    - Once the music is generated, it will appear in the **"Generated Music List."**
