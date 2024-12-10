@@ -22,7 +22,8 @@ Follow these steps to access and use the Music Generator Web App hosted on Googl
 
 ### 1. Access the Colab Notebook
 - Open the Colab notebook by clicking on the provided link:
-  [Colab Notebook Link]([https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID_HERE](https://colab.research.google.com/drive/11Yi82YDL2XoeRhGQV2dR9hdVcUmUCZjn?usp=sharing))
+  [Colab Notebook Link](https://colab.research.google.com/drive/11Yi82YDL2XoeRhGQV2dR9hdVcUmUCZjn?usp=sharing)
+
 
 ---
 
