@@ -109,6 +109,8 @@ Follow these steps to use the Music Generator Web App:
    - If you want to reset the prompt input, click the **"Clear Prompt"** button.
 
 7. demo video
+
+   
    [demo video link](https://youtu.be/1cn2NuFvVzM)
 ---
 
