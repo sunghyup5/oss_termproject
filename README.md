@@ -110,5 +110,9 @@ Follow these steps to use the Music Generator Web App:
 - **Keywords**: "Piano", "Relaxing."
 - **Generated Result**: A calming piano track ideal for a meditative session.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 
