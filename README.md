@@ -24,8 +24,11 @@ Follow these steps to access and use the Music Generator Web App hosted on Googl
 - Open the Colab notebook by clicking on the provided link:
   [Colab Notebook Link](https://colab.research.google.com/drive/11Yi82YDL2XoeRhGQV2dR9hdVcUmUCZjn?usp=sharing)
 - Enable GPU in Colab by selecting "Runtime" > "Change runtime type" > Set "Hardware accelerator" to "GPU".
+## Original Image
 ![](images/use_gpu.png)
 
+## Resized Image
+<img src="use_gpu.png" alt="Resized Image" width="300">
 ---
 
 ### 2. Execute the Code
