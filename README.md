@@ -115,6 +115,7 @@ Follow these steps to use the Music Generator Web App:
 This project uses the following open-source libraries:
 
 - [Audiocraft's MusicGen Model](https://github.com/facebookresearch/audiocraft): Licensed under the MIT License.
+- [Audiocrafts](https://github.com/camenduru/audiocraft/blob/main): Licensed under the MIT License.
 - [Flask](https://flask.palletsprojects.com/): Licensed under the BSD-3-Clause License.
 - [ngrok](https://ngrok.com): Terms of service apply.
 
