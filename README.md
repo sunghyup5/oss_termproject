@@ -41,7 +41,7 @@ Follow these steps to access and use the Music Generator Web App hosted on Googl
  
      
      
-   <img src="images/token_copy.png" alt="Resized Image" width="300">
+   <img src="images/token_copy.png" alt="Resized Image" width="500">
  
   2. Copy your token and paste it into the specific code cell where ngrok is configured:
      ```python
