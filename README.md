@@ -103,9 +103,7 @@ Follow these steps to use the Music Generator Web App:
 
      <img src="images/mg2.gif" alt="Resized Image" width="300">
 
-    <video width="600" controls>
-    <source src="https://github.com/sunghyup5/oss_termproject/blob/main/images/sound.mp4" type="video/mp4">
-    </video>
+    
 
 
 
