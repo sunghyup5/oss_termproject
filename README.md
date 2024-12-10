@@ -105,7 +105,7 @@ Follow these steps to use the Music Generator Web App:
 
 
 
-    [Download or Play the video](https://github.com/username/repository/raw/main/images/sound.mp4)
+    [Demo video](https://github.com/username/repository/raw/main/images/sound.mp4)
 
 
 
