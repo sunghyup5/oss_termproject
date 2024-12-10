@@ -28,7 +28,7 @@ Follow these steps to access and use the Music Generator Web App hosted on Googl
 ![](images/use_gpu.png)
 
 ## Resized Image
-<img src="use_gpu.png" alt="Resized Image" width="300">
+<img src="images/use_gpu.png" alt="Resized Image" width="300">
 ---
 
 ### 2. Execute the Code
