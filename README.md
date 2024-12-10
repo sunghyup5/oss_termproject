@@ -103,13 +103,13 @@ Follow these steps to use the Music Generator Web App:
 
      <img src="images/mg2.gif" alt="Resized Image" width="300">
 
-[demo video link](https://youtu.be/1cn2NuFvVzM)
-
 
 
 6. **Clear the prompt** (optional):
    - If you want to reset the prompt input, click the **"Clear Prompt"** button.
 
+7. demo video
+   [demo video link](https://youtu.be/1cn2NuFvVzM)
 ---
 
 ### Example Workflow:
