@@ -38,6 +38,7 @@ Follow these steps to access and use the Music Generator Web App hosted on Googl
 ### 3. Configure ngrok
 - To allow access to the web app, you need to configure ngrok:
   1. Get your **ngrok auth token** from [ngrok website](https://dashboard.ngrok.com/get-started/your-authtoken).
+   <img src="images/token_copy.png" alt="Resized Image" width="300">  
   2. Copy your token and paste it into the specific code cell where ngrok is configured:
      ```python
      !./ngrok authtoken YOUR_NGROK_AUTH_TOKEN
