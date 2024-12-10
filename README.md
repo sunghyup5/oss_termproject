@@ -103,6 +103,7 @@ Follow these steps to use the Music Generator Web App:
 
      <img src="images/mg2.gif" alt="Resized Image" width="300">
 
+[demo video link]("https://youtu.be/1cn2NuFvVzM")
 
 
 
