@@ -62,7 +62,7 @@ Follow these steps to access and use the Music Generator Web App hosted on Googl
 - Copy the URL (e.g., `http://1234-5678-91011.ngrok.io`) from the output of the Flask server cell.
 - Paste the URL into your web browser to access the Music Generator Web App.
 
-  <img src="images/server_url.png" alt="Resized Image" width="300">
+  <img src="images/server_url.png" alt="Resized Image" width="500">
 
 ---
 
